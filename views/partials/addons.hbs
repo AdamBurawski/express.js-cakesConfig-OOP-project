@@ -1,0 +1,28 @@
+{{log noDeleteBtn}}
+
+<h3>Selected parts of cookie</h3>
+
+<ul>
+
+  <li>Base:
+    {{cookie.base}}
+    -
+    {{pricify (findPrice bases cookie.base)}}
+    PLN
+  </li>
+
+  {{#each cookie.addons}}
+    <li>
+
+      Addon:
+      {{this}}
+      -
+      {{pricify (findPrice @root.addons this)}}
+      PLN
+      {{#unless ../noDeleteBtn}}
+        <a href="/configurator/delete-addon/{{this}}">Remove</a>
+      {{/unless}}
+    </li>
+  {{/each}}
+</ul>
+<p>Total of {{pricify sum}} PLN</p>
