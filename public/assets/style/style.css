@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+}
+
+.cookie-preview {
+  width: 601px;
+  height: 640px;
+}
+
+.error {
+  border: 1px solid red;
+  padding: 5px;
+  background-color: #ffc8c8;
+}
+
+.success {
+  border: 1px solid green;
+  padding: 5px;
+  background-color: lightgreen;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #e16767;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  margin: 5px;
+}
+.btn-disabled {
+  background-color: lightgray;
+  color: gray;
+  pointer-events: none;
+}
+.btn-big {
+  background-color: orangered;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+.cart-img {
+  max-height: 50px;
+  max-width: 100px;
+  vertical-align: middle;
+}
