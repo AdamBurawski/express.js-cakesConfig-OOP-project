@@ -33,7 +33,6 @@ class CookieMakerApp {
     this.app.set("view engine", ".hbs");
   }
 
-  // eslint-disable-next-line no-underscore-dangle
   _setRoutes() {
     this.app.use("/", new HomeRouter(this).router);
     this.app.use("/configurator", new ConfiguratorRouter(this).router);
