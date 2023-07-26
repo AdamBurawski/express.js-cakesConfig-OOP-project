@@ -19,7 +19,6 @@ class CookieMakerApp {
     this._run();
   }
 
-  // eslint-disable-next-line no-underscore-dangle
   _configureApp() {
     this.app = express();
 
